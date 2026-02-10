@@ -1,7 +1,8 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: #4b5563;
+  background: #f8fafc;
 }
 
 @media (min-width: 992px) {
@@ -18,18 +19,28 @@ h4,
 h5,
 h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #343a40;
+  font-weight: 800;
+  text-transform: none;
+  color: #111827;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 4.25rem;
+  line-height: 4.1rem;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 3.25rem;
+    line-height: 3.1rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
 }
 
 h3 {
@@ -39,6 +50,11 @@ h3 {
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+/* Improve paragraph readability */
+p {
+  color: #374151;
 }
 
 .subheading {
@@ -67,6 +83,17 @@ p.lead {
 
 .social-icons a:hover {
   background-color: #2072F5;
+}
+
+.contact-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .65rem;
+  align-items: center;
+}
+
+.contact-inline .dot {
+  opacity: .65;
 }
 
 .dev-icons {
@@ -149,6 +176,13 @@ section.resume-section {
   max-width: 75rem;
 }
 
+/* Subtle section separators on large viewports */
+@media (min-width: 992px) {
+  section.resume-section {
+    max-width: 80rem;
+  }
+}
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -185,12 +219,72 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
-/* --- Custom additions (projects + skill tags) --- */
-.project-card {
-  padding: 1rem 1.25rem;
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: .5rem;
+/* ---------------------------------------------
+   Modern resume polish (cards, tags, spacing)
+   --------------------------------------------- */
+
+section.resume-section {
   background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 25px rgba(0,0,0,.04);
+  margin: 1.25rem 1.25rem 2rem 1.25rem;
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    margin: 1.5rem 2rem 2rem 2rem;
+  }
+}
+
+.contact-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .75rem;
+  align-items: center;
+}
+
+.divider-dot::before {
+  content: "•";
+  margin: 0 .45rem;
+  color: rgba(255,255,255,.65);
+}
+
+.resume-content ul {
+  margin-bottom: .5rem;
+}
+
+.project-card {
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(17, 24, 39, .08);
+  border-radius: .85rem;
+  background: #fff;
+}
+
+.project-card + .project-card {
+  margin-top: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill-section {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(17, 24, 39, .08);
+  border-radius: .85rem;
+  background: #fff;
+}
+
+.skill-section h3 {
+  margin-bottom: .6rem;
 }
 
 .skill-tags {
@@ -201,10 +295,92 @@ a:hover, a:focus, a:active {
 
 .skill-tags .tag {
   display: inline-block;
-  padding: .2rem .55rem;
+  padding: .18rem .6rem;
   border-radius: 999px;
-  font-size: .85rem;
-  border: 1px solid rgba(0,0,0,.12);
-  background: rgba(0,0,0,.02);
+  font-size: .9rem;
+  line-height: 1.25rem;
+  border: 1px solid rgba(17, 24, 39, .12);
+  background: rgba(31, 41, 55, .03);
+  color: #111827;
+  white-space: nowrap;
 }
 
+.muted {
+  color: #6b7280;
+}
+
+/* --- Custom additions (projects + skill tags + cards) --- */
+.resume-section {
+  background: #ffffff;
+}
+
+/* Create breathing room between stacked sections on mobile */
+@media (max-width: 991.98px) {
+  .resume-section {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  }
+}
+
+.project-card {
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: .75rem;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.project-card p {
+  margin-bottom: .65rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .5rem;
+}
+
+.skill-tags .tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .22rem .6rem;
+  border-radius: 999px;
+  font-size: .86rem;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(15, 23, 42, 0.03);
+  color: #111827;
+  white-space: nowrap;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.skill-section {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: .75rem;
+  background: #ffffff;
+}
+
+.skill-section h3 {
+  font-size: 1.35rem;
+  margin-bottom: .65rem;
+}
+
+.muted {
+  color: #6b7280;
+}
