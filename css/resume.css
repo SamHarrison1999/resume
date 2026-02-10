@@ -184,3 +184,27 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+/* --- Custom additions (projects + skill tags) --- */
+.project-card {
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .5rem;
+  background: #fff;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .5rem;
+}
+
+.skill-tags .tag {
+  display: inline-block;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(0,0,0,.02);
+}
+
