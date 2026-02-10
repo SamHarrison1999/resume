@@ -1,5 +1,6 @@
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #4b5563;
   background: #f8fafc;
@@ -18,7 +19,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 800;
   text-transform: none;
   color: #111827;
@@ -29,16 +31,6 @@ h1 {
   line-height: 4.1rem;
 }
 
-@media (max-width: 575.98px) {
-  h1 {
-    font-size: 3.25rem;
-    line-height: 3.1rem;
-  }
-  h2 {
-    font-size: 2.25rem;
-  }
-}
-
 h2 {
   font-size: 2.75rem;
 }
@@ -47,23 +39,141 @@ h3 {
   font-size: 2rem;
 }
 
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 3.25rem;
+    line-height: 3.1rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+hr.m-0 {
+  display: none;
+}
+
+p {
+  color: #374151;
+}
+
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
 
-/* Improve paragraph readability */
-p {
-  color: #374151;
-}
-
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
 
+.bg-primary {
+  background-color: #2072F5 !important;
+}
+
+.text-primary {
+  color: #2072F5 !important;
+}
+
+a {
+  color: #2072F5;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #824027;
+}
+
+/* Side nav */
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+/* Section cards */
+section.resume-section {
+  max-width: 80rem;
+  min-height: auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 10px 25px rgba(0, 0, 0, .04);
+  margin: 1.25rem 1.25rem 2rem 1.25rem;
+  /* NOTE: padding comes from your HTML utilities (p-3 p-lg-5). */
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    margin: 1.5rem 2rem 2rem 2rem;
+  }
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: auto;
+}
+
+@media (min-width: 768px) {
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+/* Icons (if you still use them anywhere) */
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
@@ -85,17 +195,6 @@ p {
   background-color: #2072F5;
 }
 
-.contact-inline {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem .65rem;
-  align-items: center;
-}
-
-.contact-inline .dot {
-  opacity: .65;
-}
-
 .dev-icons {
   font-size: 3rem;
 }
@@ -104,225 +203,12 @@ p {
   color: #2072F5;
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-}
-
-#sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
-}
-
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
-
-section.resume-section {
-  /* Reduce vertical whitespace between sections */
-  padding-top: 3.25rem !important;
-  padding-bottom: 3.25rem !important;
-  max-width: 75rem;
-}
-
-/* Subtle section separators on large viewports */
-@media (min-width: 992px) {
-  section.resume-section {
-    max-width: 80rem;
-  }
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  /* Do not force each section to fill the viewport (creates large gaps for short sections). */
-  section.resume-section {
-    min-height: auto;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #2072F5 !important;
-}
-
-.text-primary {
-  color: #2072F5 !important;
-}
-
-a {
-  color: #2072F5;
-}
-
-a:hover, a:focus, a:active {
-  color: #824027;
-}
-
-/* ---------------------------------------------
-   Modern resume polish (cards, tags, spacing)
-   --------------------------------------------- */
-
-section.resume-section {
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 25px rgba(0,0,0,.04);
-  margin: 1.25rem 1.25rem 2rem 1.25rem;
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    margin: 1.5rem 2rem 2rem 2rem;
-  }
-}
-
-.contact-inline {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem .75rem;
-  align-items: center;
-}
-
-.divider-dot::before {
-  content: "•";
-  margin: 0 .45rem;
-  color: rgba(255,255,255,.65);
-}
-
+/* Lists */
 .resume-content ul {
   margin-bottom: .5rem;
 }
 
-.project-card {
-  padding: 1.1rem 1.25rem;
-  border: 1px solid rgba(17, 24, 39, .08);
-  border-radius: .85rem;
-  background: #fff;
-}
-
-.project-card + .project-card {
-  margin-top: 1rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media (min-width: 992px) {
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.skill-section {
-  padding: 1rem 1.1rem;
-  border: 1px solid rgba(17, 24, 39, .08);
-  border-radius: .85rem;
-  background: #fff;
-}
-
-.skill-section h3 {
-  margin-bottom: .6rem;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem .5rem;
-}
-
-.skill-tags .tag {
-  display: inline-block;
-  padding: .18rem .6rem;
-  border-radius: 999px;
-  font-size: .9rem;
-  line-height: 1.25rem;
-  border: 1px solid rgba(17, 24, 39, .12);
-  background: rgba(31, 41, 55, .03);
-  color: #111827;
-  white-space: nowrap;
-}
-
-.muted {
-  color: #6b7280;
-}
-
-/* --- Custom additions (projects + skill tags + cards) --- */
-.resume-section {
-  background: #ffffff;
-}
-
-/* Create breathing room between stacked sections on mobile */
-@media (max-width: 991.98px) {
-  .resume-section {
-    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
-  }
-}
-
+/* Cards inside sections */
 .project-card {
   padding: 1.1rem 1.25rem;
   border: 1px solid rgba(15, 23, 42, 0.08);
@@ -331,10 +217,15 @@ section.resume-section {
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
+.project-card + .project-card {
+  margin-top: 1rem;
+}
+
 .project-card p {
   margin-bottom: .65rem;
 }
 
+/* Tags (skills + project chips) */
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -353,12 +244,12 @@ section.resume-section {
   white-space: nowrap;
 }
 
-/* About-page keyword chips (same visual language as skill-tags) */
 .quick-tags {
   display: flex;
   flex-wrap: wrap;
   gap: .45rem .5rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+  padding-top: .25rem;
 }
 
 .quick-tags .tag {
@@ -373,28 +264,11 @@ section.resume-section {
   white-space: nowrap;
 }
 
-/* Portfolio cards: keep thumbnails consistent */
-.portfolio-card {
-  padding: 1rem 1.25rem;
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: .75rem;
-  background: #fff;
+.muted {
+  color: #6b7280;
 }
 
-.portfolio-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: .5rem;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-}
-
-@media (min-width: 992px) {
-  .portfolio-card img {
-    height: 240px;
-  }
-}
-
+/* Skills layout */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -425,6 +299,25 @@ section.resume-section {
   margin-bottom: .65rem;
 }
 
-.muted {
-  color: #6b7280;
+/* Portfolio */
+.portfolio-card {
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: .75rem;
+  background: #fff;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: .5rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+@media (min-width: 992px) {
+  .portfolio-card img {
+    height: 240px;
+  }
 }
