@@ -1,540 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Samuel Harrison — Software Engineer (Backend, DevOps & Cloud). Python/Java, FastAPI, Docker, Kubernetes, CI/CD, microservices. MSc Computer Science (Distinction) + BSc First Class." />
+  <meta name="keywords" content="Software Engineer, Backend Engineer, DevOps Engineer, Cloud Engineer, Python, Java, FastAPI, Microservices, Distributed Systems, Docker, Kubernetes, CI/CD, GitHub Actions, Jenkins, Ansible, SQL, Secure Software Development, Static Code Analysis, LLM, AI Evaluation, Model Evaluation, Multimodal Evaluation" />
+  <meta name="author" content="Samuel Harrison" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta property="og:title" content="Samuel Harrison — Software Engineer (Backend • DevOps • Cloud)" />
+  <meta property="og:description" content="Full-stack + platform-minded engineer building reliable, secure, and scalable systems. Python/Java, FastAPI, Docker, Kubernetes, CI/CD, microservices. MSc (Distinction) + BSc First Class." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samharrison1999.github.io/resume/" />
 
-  <title>Samuel Harrison's Resume</title>
+  <title>Samuel Harrison — Software Engineer (Backend • DevOps • Cloud)</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://samharrison1999.github.io/resume/" />
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="resume.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Samuel Harrison",
+    "jobTitle": "Software Engineer",
+    "url": "https://samharrison1999.github.io/resume/",
+    "sameAs": [
+      "https://github.com/SamHarrison1999",
+      "https://www.linkedin.com/in/sam-harrison-839a27254/",
+    ]
+  }
+  </script>
 </head>
 
 <body id="page-top">
 
+  <!-- Side Nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Samuel Harrison</span>
-      <span class="d-none d-lg-block">
-      </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#training">Online Training</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Honours & Awards</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Page Content -->
   <div class="container-fluid p-0">
 
+    <!-- About -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-        <h1 class="mb-0">Samuel
-          <span class="text-primary">Harrison</span>
-        </h1>
-        <div class="subheading mb-5">24 Oak Tree Close · Loughton, Essex IG10 2RE · +44 7940 069811 ·
-          <a href="mailto:samh99@outlook.com">samh99@outlook.com</a>
+        <h1 class="mb-0">Samuel <span class="text-primary">Harrison</span></h1>
+        <div class="subheading mb-4">
+          Software Engineer · Backend · DevOps · Cloud · United Kingdom (Remote)
+          <span class="mx-2">·</span>
+          <a href="mailto:samuh99@outlook.com">samh99@outlook.com</a>
         </div>
-        <p class="lead mb-5">I am a detail-oriented full-stack software developer with two years of work experience wanting to develop and deploy innovative, accessible technologies for a global audience. I have a willingness to learn new tools and technologies. My main programming language is Java.</p>
+
+        <p class="lead mb-4">
+          I’m a Software Engineer with 2+ years’ experience across backend/full-stack development, DevOps, and cloud engineering, 
+          backed by an MSc Computer Science (Distinction) and a First-Class BSc Computer Science.
+        </p>
+
+        <p class="lead mb-4">
+          I’m particularly interested in building reliable, secure, scalable systems—especially where software engineering meets 
+          infrastructure and automation. I also enjoy applied AI tooling, including evaluation and quality workflows.
+        </p>
+
+        <p class="lead mb-4">
+          I’m open to Software Engineering, Platform/DevOps, or Cloud-focused roles (UK/remote) where ownership, engineering quality, 
+          and continuous improvement matter. Feel free to message me if you’d like links to my portfolio or GitHub projects.
+        </p>
+
+
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/sam-harrison-839a27254/">
+          <a href="https://www.linkedin.com/in/sam-harrison-839a27254/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/SamHarrison1999">
+          <a href="https://github.com/SamHarrison1999" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <hr class="m-0">
+    <hr class="m-0" />
 
+    <!-- Experience -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Development Graduate</h3>
-            <div class="subheading mb-3">Verint</div>
-            <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            I spent 13 months working remotely as a development graduate in the release management team</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Developed a data collection system for Staging and Production</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Integrated security scans into CI/CD</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Automated memory management of virtual machines</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Migrated virtual machines to the cloud</li>
-        </ul>
+            <h3 class="mb-0">AI Data Annotator / Model Evaluation Specialist (Project Sonic)</h3>
+            <div class="subheading mb-3">TELUS Digital AI Data Solutions · Freelance · Remote (UK)</div>
+            <ul>
+              <li>Contributed to Project Sonic, a large-scale generative AI training and evaluation programme</li>
+              <li>Completed multimodal AI tasks, including image editing conversations, product image pairing, and prompt-response evaluation</li>
+              <li>Evaluated paired AI responses using structured rubrics covering factuality, instruction adherence, helpfulness, and style</li>
+              <li>Applied comparative Likert-scale scoring to identify hallucinations, instruction violations, and misleading outputs</li>
+              <li>Followed strict quality-control workflows and logged daily outputs/time tracking per project reporting requirements</li>
+              <li>Ensured timely delivery of high-quality annotations aligned with client and platform standards</li>
+            </ul>
           </div>
-          <br>
           <div class="resume-date text-md-right">
-            <span class="text-primary">July 2023 – August 2024</span>
+            <span class="text-primary">Sep 2025 – Dec 2025</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Graduate Software Developer</h3>
-            <div class="subheading mb-3">Wiley Edge - Contracted out to Nomura</div>
-            <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            A dashboard project that allowed you to monitor the state and performance of individual components</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            An XML compare tool that compared XML messages</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Bug Fixes</li>
-        </ul>
+            <h3 class="mb-0">AI Evaluation Specialist (Mint Rating)</h3>
+            <div class="subheading mb-3">Outlier AI · Freelance · Remote (UK)</div>
+            <ul>
+              <li>Evaluated AI-generated responses for quality, safety, and usefulness (Mint Rating project)</li>
+              <li>Scored outputs across instruction-following, truthfulness, harmlessness, completeness, relevance, and writing quality</li>
+              <li>Assigned holistic quality ratings and performed comparative preference ranking using Likert-scale scoring</li>
+              <li>Wrote concise, evidence-based justifications supporting evaluation decisions</li>
+              <li>Reviewed and corrected submitted tasks, identifying inconsistencies and guideline violations</li>
+            </ul>
           </div>
-          <br>
           <div class="resume-date text-md-right">
-            <span class="text-primary">November 2021 - November 2022</span>
+            <span class="text-primary">May 2025</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Technology Intern</h3>
-            <div class="subheading mb-3">Bright Network</div>
-            <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Participated in presentations hosted by leading companies such as Google, EY, and Bloomberg in which they detailed their work environments, workflow, and application processes</li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Solved a complex technology consulting work sample from EY that was peer-reviewed </li>
-        </ul>
+            <h3 class="mb-0">Software Engineer (Development Graduate)</h3>
+            <div class="subheading mb-3">Verint · Full Time Internship · Remote (Woking, United Kingdom)</div>
+            <ul>
+              <li>Developed a data collection system for staging and production pipelines, improving operational efficiency by 30%</li>
+              <li>Integrated automated security scans into CI/CD workflows, reducing system vulnerabilities by 20%</li>
+              <li>Automated virtual machine memory management, reducing manual intervention by 15%</li>
+              <li>Supported the migration of virtual machines to the cloud, improving system scalability and reliability</li>
+              <li>Monitored CI/CD pipelines and maintained a 90% build success rate by rapidly diagnosing and resolving issues</li>
+              <li>Delivered monthly performance reports to senior stakeholders, enabling data-driven decision-making</li>
+            </ul>
           </div>
-          <br>
           <div class="resume-date text-md-right">
-            <span class="text-primary">June 2021 - July 2021</span>
+            <span class="text-primary">July 2023 – Aug 2024</span>
           </div>
         </div>
 
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Software Engineer (Graduate Programme – Nomura placement)</h3>
+            <div class="subheading mb-3">mthree · Full-time · Hybrid (London)</div>
+            <ul>
+              <li>Configured and deployed servers using Ansible and the Nomura Private Cloud, significantly improving deployment efficiency</li>
+              <li>Designed Docker and Kubernetes-based solutions to containerise applications, reducing resource overhead by 25%</li>
+              <li>Developed an XML comparison tool that improved data analysis and reduced processing time by 20%</li>
+              <li>Built and deployed troubleshooting software to streamline internal support processes</li>
+              <li>Resolved critical production software defects, ensuring uninterrupted system functionality</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Nov 2021 – Nov 2022</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Graduate Software Developer (Training Programme)</h3>
+            <div class="subheading mb-3">mthree · Full-time · Remote (UK)</div>
+            <ul>
+              <li>Completed a paid 6-week graduate training programme covering advanced Java development and the Spring Framework (DI), plus Maven and software engineering fundamentals</li>
+              <li>PBuilt RESTful services using Spring Boot (JDBC Template) and worked with relational databases and SQL</li>
+              <li>Practised full-stack web development concepts, including REST integration and front-end basics</li>
+              <li>Received regular technical feedback and evaluations, improving code quality and delivery standards</li>
+              <li>Strengthened communication skills and gained foundational knowledge of financial concepts relevant to investment banking environments</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Sep 2021 – Oct 2021</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Virtual Technology Intern (Internship Experience UK)</h3>
+            <div class="subheading mb-3">Bright Network · Internship · Remote (UK)</div>
+            <ul>
+              <li>Completed Bright Network's Internship Experience UK (Technology) virtual internship programme (June–July 2021)</li>
+              <li>Attended employer-led sessions covering industry practices, emerging technologies, and career development (including Google, EY, and Bloomberg)</li>
+              <li>Completed a technology consulting work sample and took part in structured peer review and self-reflection activities</li>
+              <li>Practised communicating solution approaches, receiving feedback, and iterating on recommendations</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2021 – July 2021</span>
+          </div>
         </div>
 
       </div>
-
     </section>
 
-    <hr class="m-0">
+    <hr class="m-0" />
 
+    <!-- Projects -->
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>
+
+        <div class="project-card mb-4">
+          <h3 class="mb-1">LifeCoach-MVP — AI-Driven Coaching & Productivity Platform</h3>
+          <div class="subheading mb-2">Dec 2025 – Jan 2026 · <a href="https://github.com/SamHarrison1999/lifecoach-mvp" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+          <p>
+            Full-stack, cloud-ready coaching platform supporting goals, habits, journaling, analytics, and adaptive coaching workflows.
+            Built with a modular FastAPI backend and React/TypeScript frontend; designed with CI/CD, containerisation, and observability.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Microservices</span><span class="tag">CI/CD</span><span class="tag">Docker</span><span class="tag">Systems Design</span>
+          </div>
+        </div>
+
+        <div class="project-card mb-4">
+          <h3 class="mb-1">AI-Powered Code Analyser for Secure Software Engineering (MSc Dissertation)</h3>
+          <div class="subheading mb-2">Jan 2025 – Aug 2025 · <a href="https://github.com/SamHarrison1999/code-analyser" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+          <p>
+            Hybrid static analysis tool combining rule-based checks with LLM assistance to detect security/reliability issues,
+            generate explanations, and propose actionable remediation. Included dataset preparation, annotation workflows,
+            confidence estimation, and quantitative evaluation, plus a GUI client and reproducible experiments.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">Static Code Analysis</span><span class="tag">Secure Software Development</span><span class="tag">LLMs</span><span class="tag">AI Evaluation</span>
+          </div>
+        </div>
+
+        <div class="project-card mb-4">
+          <h3 class="mb-1">Cryptocurrency Exchange (Full-Stack Simulation)</h3>
+          <div class="subheading mb-2">May 2023 · <a href="https://github.com/SamHarrison1999/blockchain-developer-bootcamp" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+          <p>
+            Exchange simulation with order books, price charts, trade history, and wallet management; focused on UI state management and backend logic for financial-style workflows.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">REST APIs</span><span class="tag">Systems Design</span>
+          </div>
+        </div>
+
+        <div class="project-card mb-4">
+          <h3 class="mb-1">Chess — Java Desktop Application</h3>
+          <div class="subheading mb-2">Sep 2020 – Sep 2021 · <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/main/Chess" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+          <p>
+            Desktop chess game featuring move validation, game logic, and GUI; designed with OOP principles and maintainable structure.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Java</span><span class="tag">OOP</span><span class="tag">Data Structures & Algorithms</span><span class="tag">GUI</span>
+          </div>
+        </div>
+
+        <div class="project-card mb-4">
+          <h3 class="mb-1">Fuzzy Logic Smart Lighting System (BSc Dissertation)</h3>
+          <div class="subheading mb-2">Aug 2020 – Aug 2021</div>
+          <p>
+            Mamdani-style fuzzy logic controller for adaptive IoT lighting using Raspberry Pi and voice integration (Alexa),
+            automating colour/brightness based on temperature and time of day.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Fuzzy Logic</span><span class="tag">Control Systems</span><span class="tag">IoT</span><span class="tag">Embedded Systems</span><span class="tag">Systems Design</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="mb-1">Information Retrieval System (Elasticsearch & Kibana)</h3>
+          <div class="subheading mb-2">Sep 2020 – Jan 2021 · <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/main/Elastic%20Search" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+          <p>
+            Built a search and analysis workflow using Elasticsearch and Kibana to index, query, and analyse structured datasets; focused on relevance, filtering, and analytics.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">Elasticsearch</span><span class="tag">Kibana</span><span class="tag">Data Analysis</span><span class="tag">Information Retrieval</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0" />
+
+    <!-- Skills -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="mb-4">
+          <h3 class="h5">Core</h3>
+          <div class="skill-tags">
+            <span class="tag">Software Engineering</span><span class="tag">Backend</span><span class="tag">Microservices</span><span class="tag">Distributed Systems</span><span class="tag">Systems Design</span><span class="tag">Software Architecture</span><span class="tag">Secure Software Development</span>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5">Languages & Frameworks</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5">DevOps & Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag">CI/CD</span><span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Ansible</span><span class="tag">Cloud Computing</span>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5">AI Tooling & Evaluation</h3>
+          <div class="skill-tags">
+            <span class="tag">Large Language Models (LLM)</span><span class="tag">AI Evaluation</span><span class="tag">AI Model Evaluation</span><span class="tag">Multimodal Evaluation</span><span class="tag">Comparative Scoring</span>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h5">Security & Analysis</h3>
+          <div class="skill-tags">
+            <span class="tag">Static Code Analysis</span><span class="tag">Information Security</span><span class="tag">Network Security</span><span class="tag">Quality Assurance</span><span class="tag">Analytical Reasoning</span><span class="tag">Information Retrieval</span><span class="tag">Data Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0" />
+
+    <!-- Education -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Essex</h3>
-            <div class="subheading mb-3">Master of Science</div>
-            <div>Computer Science</div>
-            <p>Modules</p>
-            <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Launching into Computer Science</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Object Oriented Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Secure Software Development (Computer Science)</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Network Security</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Information Security Management</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Software Engineering Project Management</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Research Methods and Professional Practice</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            MSc Computing Project and Dissertation</li>
-            <li>
-        </ul>
+            <h3 class="mb-0">University of Essex Online</h3>
+            <div class="subheading mb-2">MSc Computer Science — Distinction</div>
+            <p class="mb-2">
+              Key modules: Object-Oriented Programming, Secure Software Development, Network & Information Security, Information Security Management,
+              Software Engineering Project Management, Research Methods & Professional Practice, MSc Project & Dissertation.
+            </p>
           </div>
-          <br>
           <div class="resume-date text-md-right">
-            <span class="text-primary">July 2023 - July 2025</span>
+            <span class="text-primary">Jul 2023 – Dec 2025</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">University of Essex</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science</div>
-            <p>GRADE: 1<sup>st</sup></p>
-            <p>Modules</p>
-            <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Team Project Challenge</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Mathematics for Computing</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Introduction to Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Object-Oriented Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Introduction to Databases</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Web Development</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Network Fundamentals</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Fundamentals of Digital Systems</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Software Engineering</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Application Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Data Structures and Algorithms</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Human-Computer Interaction, User
-Experience (UX) Design and
-Information Visualisation</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Web Application Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Computer Game Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Computer Security</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Individual Capstone Project Challenge</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Advanced Programming</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Information Retrieval</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Computer Vision</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            High-Level Games Development</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Large Scale Software Systems and
-Extreme Programming</li>
-        </ul>
+            <div class="subheading mb-2">BSc Computer Science — First Class Honours</div>
+            <p class="mb-2">
+              Core study: OOP, Data Structures & Algorithms, Databases, Web Application Programming, Security, Systems Design, Computer Vision.
+              Final-year dissertation: fuzzy logic smart lighting system (IoT).
+            </p>
           </div>
-          <br>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2018 - September 2021</span>
+            <span class="text-primary">Sep 2018 – Sep 2021</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Epping Forest College</h3>
-            <div class="subheading mb-3">BTEC Level 3</div>
-            <div>ICT</div>
-            <p>GRADE: D*DD</p>
-            <p>Modules</p>
-            <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Computer Systems</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Information Systems</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Organisational Systems Security</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            IT Systems Troubleshooting and Repair</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Database Design</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Computer Game Design</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Systems Analysis and Design</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Project Planning with IT</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Human Computer Interaction</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Web Server Scripting</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Website Production</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Digital Graphics</li>
-        </ul>
+            <div class="subheading mb-2">BTEC Level 3 Extended Diploma (Information Technology) — Triple Distinction (D*DD)</div>
+            <p class="mb-0">
+              Modules included systems analysis & design, organisational security, database design, web production, and troubleshooting.
+            </p>
           </div>
-          <br>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2015 - August 2018</span>
+            <span class="text-primary">Sep 2016 – Aug 2018</span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <hr class="m-0">
+    <hr class="m-0" />
 
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
+    <!-- Courses -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="courses">
       <div class="w-100">
-        <h2 class="mb-5">Portfolio</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Chess</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Chess.png" alt="Screenshot of Chess project">
-            <div>Java Chess Game with AI. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Chess">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Cryptocurrency Exchange</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Cryptocurrency Exchange.png" alt="Screenshot of Cryptocurrency Exchange project">
-            <div>Cryptocurrency exchange project with custom token. Check it out with this <a href="https://github.com/SamHarrison1999/blockchain-developer-bootcamp">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Minesweeper</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Minesweeper.png" alt="Screenshot of Minesweeper project">
-            <div>Java Minesweeper clone. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Minesweeper">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Tetris</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Tetris.png" alt="Screenshot of Tetris project">
-            <div>Java Tetris clone. Check it out with this <a href="https://github.com/SamHarrison1999/Projects/tree/main/Tetris">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Calculator</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Calculator.png" alt="Screenshot of Calculator project">
-            <div>Python Calculator Project. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Calculator">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Pong</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Pong.png" alt="Screenshot of Pong project">
-            <div>Pong Python clone. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Pong">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">2048</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/2048.png" alt="Screenshot of 2048 project">
-            <div>2048 Python clone. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/2048">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Pac-Man</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Pac-Man.png" alt="Screenshot of Pac-Man project">
-            <div>Pac-Man Python clone. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Pacman">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Space Invaders</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Space Invaders.png" alt="Screenshot of Space Invaders project">
-            <div>Space Invaders Python clone. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Space%20Invaders">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Tic Tac Toe</h3>
-            <img class="img-fluid mx-auto mb-2" src="img/Tic Tac Toe.png" alt="Screenshot of Tic Tac Toe project">
-            <div>Tic Tac Toe Python clone. Check it out with this <a href="https://github.com/SamHarrison1999/Personal-Projects/tree/ab00449be61225eb6268eea34e46dbe4135ba69d/Tic%20Tac%20Toe">link</a>.</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-python"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-docker"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="training">
-      <div class="w-100">
-        <h2 class="mb-5">Online Training</h2>
+        <h2 class="mb-5">Courses</h2>
+        <p class="mb-4">
+          Selected completed courses and bootcamps (Udemy / Pluralsight / Eduonix).
+        </p>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            Java courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Python courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Unity & C# courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Blockchain courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Angular courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Linux courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Ansible courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Agile courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            XSLT courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Testing courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Design Pattern courses</li>
-            <li>
-            <i class="fa-li fa fa-square"></i>
-            Docker and Kubernetes courses</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Python Mini E-Degree</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Getting Started with Ansible</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Getting Started with Linux System Administration</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Getting Started with the Linux Command Line</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Applying Concurrency and Multi-threading to Common Java 8 Patterns</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Using Java 8 Streams to Process and Analyze Data in Memory</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Leveraging Parallel Streams for Fast Data Processing in Java 8</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Securing Java Web Application Data</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Java Core Libraries: JDBC 4</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Java Persistence API 2.2</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Blockchain Developer Bootcamp</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Ethereum and Solidity: The Complete Developer's Guide</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>vSphere 6.5 Foundations: Introduction</li>
         </ul>
       </div>
     </section>
 
-    <hr class="m-0">
+    <hr class="m-0" />
 
+    <!-- Awards -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
-        <h2 class="mb-5">Awards</h2>
+        <h2 class="mb-5">Honours & Awards</h2>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Included on Dean's List for Excellence</li>
+          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>Dean’s List for Excellence (Undergraduate)</li>
         </ul>
       </div>
     </section>
 
   </div>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.js"></script>
-
+  <script src="resume.js"></script>
 </body>
-
 </html>
